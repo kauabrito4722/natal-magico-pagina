@@ -2,8 +2,8 @@ export const comercial = {
   price: 'R$\u00a017,90',
   // Parcelamento ainda não informado. Preencha somente quando a plataforma confirmar.
   installments: '',
-  // Substitua pelo URL externo assim que o checkout existir: [LINK_CHECKOUT]
-  checkoutUrl: '#checkout',
+  // Checkout Cakto.
+  checkoutUrl: 'https://pay.cakto.com.br/y7g2x4s_1198035',
   christmas: { month: 12, day: 25 },
   access: 'O acesso à área de membros é liberado após a confirmação do pagamento.',
   guaranteeDays: 7,
@@ -14,3 +14,4 @@ export const comercial = {
   termsUrl: '#',
   privacyUrl: '#'
 };
+
