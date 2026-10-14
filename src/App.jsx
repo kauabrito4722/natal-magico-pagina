@@ -8,7 +8,8 @@ const mechanismIcons = [Users, BookOpen, Palette, Scissors];
 const asset = (name, small = false) => `/assets/${name}${small ? '-sm' : ''}.webp`;
 
 function CTA({ label = 'QUERO O NATAL MÁGICO', href = '#oferta' }) {
-  return <a className="btn" href={href}>{label}<span aria-hidden="true">→</span></a>;
+  const track = () => { if (href === comercial.checkoutUrl && window.fbq) window.fbq('track', 'InitiateCheckout'); };
+  return <a className="btn" href={href} onClick={track}>{label}<span aria-hidden="true">→</span></a>;
 }
 
 function SectionTitle({ children, lead }) {
